@@ -1,8 +1,6 @@
-import React from "react";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormControl from "@material-ui/core/FormControl";
-import TextareaAutosize from "@material-ui/core/TextareaAutosize";
-import styled from "styled-components";
+import React from 'react';
+import TextareaAutosize from '@material-ui/core/TextareaAutosize';
+import styled from 'styled-components';
 
 const StyledTextarea = styled.div`
   textarea {

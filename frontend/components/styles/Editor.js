@@ -1,9 +1,9 @@
-import styled, { keyframes } from "styled-components";
+import styled from 'styled-components';
 
 export const RichEditorRoot = styled.div`
   background: #fff;
   border: 1px solid #ddd;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   font-size: 14px;
   padding: 15px;
 
@@ -31,7 +31,7 @@ export const RichEditorRoot = styled.div`
   .RichEditor-editor .RichEditor-blockquote {
     border-left: 5px solid #eee;
     color: #666;
-    font-family: "Hoefler Text", "Georgia", serif;
+    font-family: 'Hoefler Text', 'Georgia', serif;
     font-style: italic;
     margin: 16px 0;
     padding: 10px 20px;
@@ -39,13 +39,13 @@ export const RichEditorRoot = styled.div`
 
   .RichEditor-editor .public-DraftStyleDefault-pre {
     background-color: rgba(0, 0, 0, 0.05);
-    font-family: "Inconsolata", "Menlo", "Consolas", monospace;
+    font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
     font-size: 16px;
     padding: 20px;
   }
 
   .RichEditor-controls {
-    font-family: "Helvetica", sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 14px;
     margin-bottom: 5px;
     user-select: none;

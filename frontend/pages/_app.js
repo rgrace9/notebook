@@ -1,6 +1,7 @@
-import Page from "../components/Page";
-import { ApolloProvider } from "@apollo/react-hooks";
-import withData from "../utils/withData";
+import React from 'react';
+import { ApolloProvider } from '@apollo/react-hooks';
+import Page from '../components/Page';
+import withData from '../utils/withData';
 
 export default withData((props) => {
   const { apollo, Component, pageProps } = props;

@@ -1,15 +1,14 @@
-import React, { useState } from "react";
-import unified from "unified";
-import parse from "remark-parse";
-import remark2react from "remark-react";
-import { makeStyles } from "@material-ui/core/styles";
-import Textarea from "./Textarea";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormControl from "@material-ui/core/FormControl";
-import SaveIcon from "@material-ui/icons/Save";
-import Button from "@material-ui/core/Button";
-import styled from "styled-components";
-import Form from "./styles/Form";
+import React, { useState } from 'react';
+import unified from 'unified';
+import parse from 'remark-parse';
+import remark2react from 'remark-react';
+import { makeStyles } from '@material-ui/core/styles';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import SaveIcon from '@material-ui/icons/Save';
+import Button from '@material-ui/core/Button';
+import Textarea from './Textarea';
+import Form from './styles/Form';
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -18,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Markdown = () => {
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
   const classes = useStyles();
   const onChange = (e) => {
     const { value } = e.target;
@@ -47,9 +46,7 @@ const Markdown = () => {
           </Button>
         </FormControl>
       </Form>
-      <div id="preview">
-        {unified().use(parse).use(remark2react).processSync(text).result}
-      </div>
+      <div id="preview">{unified().use(parse).use(remark2react).processSync(text).result}</div>
     </div>
   );
 };

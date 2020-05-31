@@ -1,16 +1,16 @@
-import Head from "next/head";
-import Markdown from "../components/Markdown";
-import React, { useEffect, useState } from "react";
-import Editor from "../components/Editor";
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from 'react';
+import Markdown from '../components/Markdown';
+import Editor from '../components/Editor';
 
 export default function Home() {
-  const [noteType, setNoteType] = useState("");
-  useEffect(() => {
-    let notes = [];
-    localStorage.setItem("notes", JSON.stringify(notes));
-  }, []);
+  // const [noteType, setNoteType] = useState('');
+  // useEffect(() => {
+  //   let notes = [];
+  //   localStorage.setItem('notes', JSON.stringify(notes));
+  // }, []);
 
-  const noteChange = () => {};
+  // const noteChange = () => {};
 
   return (
     <div className="container">

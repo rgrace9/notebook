@@ -7,6 +7,21 @@
     "build": "next build",
     "start": "next start"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "components/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint . --fix"
+    ],
+    "pages/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint . --fix"
+    ]
+  },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
     "@apollo/react-ssr": "^3.1.5",
@@ -35,14 +50,23 @@
     "react-simple-code-editor": "^0.11.0",
     "remark-parse": "^8.0.2",
     "remark-react": "^7.0.1",
-    "slate": "^0.58.1",
-    "slate-react": "^0.58.2",
     "styled-components": "^5.1.0",
     "unified": "^9.0.0"
   },
   "devDependencies": {
     "apollo": "^2.27.4",
-    "graphql-tools": "^5.0.0"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "graphql-tools": "^5.0.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
   },
   "babel": {
     "env": {

@@ -1,4 +1,5 @@
-import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
+/* eslint-disable max-len */
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
     html {
@@ -19,5 +20,15 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     transition: all 0.25s linear;
+  }
+
+  textarea {
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+  }
+
+  .editor {
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
   }
 `;

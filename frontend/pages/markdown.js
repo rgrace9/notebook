@@ -1,5 +1,5 @@
-import Head from "next/head";
-import Markdown from "../components/Markdown";
+import React from 'react';
+import Markdown from '../components/Markdown';
 
 export default function Home() {
   return (
