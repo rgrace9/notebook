@@ -4,7 +4,6 @@ import { darkTheme, lightTheme } from "./styles/themes";
 import { GlobalStyles } from "./styles/global";
 import Header from "./Header";
 import NavBar from "./NavBar";
-import Button from "@material-ui/core/Button";
 
 const StyledPage = styled.div`
   max-width: 80rem;
