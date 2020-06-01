@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const loading = keyframes`
   from {
@@ -13,13 +13,13 @@ const loading = keyframes`
 `;
 
 const Form = styled.form`
-  .MuiFormControl-root {
+  /* .MuiFormControl-root {
     .MuiFormControlLabel-root {
       margin: 0px;
       display: flex;
       flex-direction: column;
     }
-  }
+  } */
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
   background: rgba(0, 0, 0, 0.02);
   border: 5px solid white;
@@ -30,10 +30,10 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   /* min-width: 800px; */
-  label {
+  /* label {
     display: block;
     margin-bottom: 1rem;
-  }
+  } */
   textarea {
   }
   input,
@@ -48,7 +48,7 @@ const Form = styled.form`
     }
   }
   button,
-  input[type="submit"] {
+  input[type='submit'] {
     width: auto;
     color: white;
     border: 0;
@@ -63,7 +63,7 @@ const Form = styled.form`
     &[disabled] {
       opacity: 0.5;
     }
-    &[aria-busy="true"]::before {
+    &[aria-busy='true']::before {
       background-size: 50% auto;
       animation: ${loading} 0.5s linear infinite;
     }
