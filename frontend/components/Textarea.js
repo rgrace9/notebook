@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const StyledTextarea = styled.div`
   textarea {
-    max-width: 75rem;
+    min-width: 75rem;
   }
 `;
 

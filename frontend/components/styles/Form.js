@@ -29,7 +29,7 @@ const Form = styled.form`
   font-weight: 600;
   display: flex;
   flex-direction: column;
-  /* min-width: 800px; */
+  min-width: 800px;
   /* label {
     display: block;
     margin-bottom: 1rem;

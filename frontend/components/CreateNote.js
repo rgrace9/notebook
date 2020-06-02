@@ -12,6 +12,11 @@ import Form from './styles/Form';
 const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
+    backgroundColor: '#51675B',
+    '&:hover, :focus': {
+      background: '#35403A',
+      boxShadow: 'none',
+    },
   },
   formControl: {
     margin: theme.spacing(1),
@@ -43,8 +48,6 @@ const CreateNote = () => {
     });
   };
 
-  console.log(note.type);
-
   return (
     <Form>
       <FormControl>
@@ -73,7 +76,6 @@ const CreateNote = () => {
       <FormControl>
         <Button
           variant="contained"
-          color="primary"
           size="large"
           className={classes.button}
           startIcon={<SaveIcon />}
