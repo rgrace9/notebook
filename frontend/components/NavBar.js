@@ -63,7 +63,7 @@ export default function MenuAppBar(props) {
           label={auth ? 'Dark' : 'Light'}
         />
       </FormGroup>
-      <AppBar position="static">
+      <AppBar position="static" classes={{}}>
         <Toolbar>
           <div>
             <IconButton

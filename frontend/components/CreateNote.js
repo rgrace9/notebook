@@ -7,6 +7,8 @@ import FormControl from '@material-ui/core/FormControl';
 import SaveIcon from '@material-ui/icons/Save';
 import Button from '@material-ui/core/Button';
 import Markdown from './Markdown';
+import TextEditor from './TextEditor';
+
 import Form from './styles/Form';
 
 const useStyles = makeStyles((theme) => ({
@@ -48,6 +50,7 @@ const CreateNote = () => {
     });
   };
 
+  console.log({ note });
   return (
     <Form>
       <FormControl>
@@ -73,6 +76,7 @@ const CreateNote = () => {
       {note.type === 'markdown' && (
         <Markdown onChange={onChange} value={text} handleChange={handleChange} />
       )}
+      {note.type === 'textEditor' && <TextEditor />}
       <FormControl>
         <Button
           variant="contained"

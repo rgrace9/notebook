@@ -71,7 +71,7 @@ class RichEditorExample extends React.Component {
         <RichEditorRoot>
           <BlockStyleControls editorState={editorState} onToggle={this.toggleBlockType} />
           <InlineStyleControls editorState={editorState} onToggle={this.toggleInlineStyle} />
-          <div onClick={this.focus}>
+          <div onClick={this.focus} style={{ height: '300px' }}>
             <Editor
               blockStyleFn={getBlockStyle}
               customStyleMap={styleMap}

@@ -29,7 +29,6 @@ const Markdown = (props) => {
               }}
             />
           }
-          label="markdown"
           name="note"
         />
       </FormControl>
